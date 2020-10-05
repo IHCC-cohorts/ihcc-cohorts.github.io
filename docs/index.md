@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Welcome to the International HundredK+ Cohorts Consortium (IHCC) data harmonization project
 
-You can use the [editor on GitHub](https://github.com/IHCC-cohorts/ihcc-cohorts.github.io/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+The IHCC data harmonization effort facilitates the integration of cohort data under a common terminology, the *Genomics Cohorts Knowledge Ontology (GECKO)*. You can find our more about GECKO [here](http://www.obofoundry.org/ontology/gecko.html).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There are four major roles in the IHCC data harmonization effort:
+* The *data dictionary maintainer* is the individual or group responsible for a particular data dictionary, such as the Genomics England (GE) data dictionary or the Golestan Cohort Study (GCS) data dictionary.
+* The *IHCC data steward* is the point person for the data dictionary maintainers, 
 
-### Markdown
+## Quick links for data dictionary maintainers:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Information on [how to register your data dictionary](DataDictionaryRegistration) with the HCC data harmonization effort.
 
-```markdown
-Syntax highlighted code block
+## Developer documentation
+- Information for IHCC data administrators 
 
-# Header 1
-## Header 2
-### Header 3
+## IHCC developer documentation
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IHCC-cohorts/ihcc-cohorts.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## IHCC data stewards documentation
