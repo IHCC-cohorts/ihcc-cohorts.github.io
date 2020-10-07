@@ -59,9 +59,9 @@ There are currently no tools to support edits to data dictionaries easily. Pleas
 
 1. `git clone` the [data harmonization repository](https://github.com/IHCC-cohorts/data-harmonization).
 1. The source of truth for any data dictionary and their mappings is in the `templates` directory, for example `templates/ge.tsv`. Edit this file using, for example Excel.
-1. In your console, run `cd` to the `data-harmonization` project directort, then type `make all`. This will rebuild all data dictionaries, including your recent changes.
+1. In your console, run `cd` to the `data-harmonization` project directory, then type `make all`. This will rebuild all data dictionaries, including your recent changes.
 1. Inspect the diff, commit the changes to a branch, push and create a pull request.
-1. Ask for a review from another IHCC member, then proceed as usual. Make sure editing with Excel does not create an unnecessarily huge diff!
+1. Ask for a review from another IHCC member, then proceed as usual. If you know how, make sure editing the TSV with Excel causes only a small diff, reflecting your changes. Else, it is possible Excel saved the file with somehow wrong settings.
 
 
 ## General DROID tips
@@ -74,3 +74,4 @@ There are currently no tools to support edits to data dictionaries easily. Pleas
 1. Nothing you do in the DROID UI *except for the red Push button on the left* can actually do anything to the GitHub repository that holds our data. The `delete` button in the [branches overview](https://droid.ontodev.com/IHCC), for example, only deletes a copy of a branch; not the actual branch on GitHub.
 1. If clicking on a link does not open the tabs as documented by the process above, try switching of any Ad blockers you have running in your browser.
 1. A list of typical errors that can occur during the whole process can be found [here](TypicalDataDictionaryBuildErrors.md).
+1. One of the central components underlying DROID is GNU make, a system to, in essence, build files in a systematic way. One typical message that often confuses new users of `make`, but one we would not expect you to encounter using DROID, is `nothing to be done for X`, where `X` is usually the name of a file. This means that the file and all its dependencies have already been build correctly and you can proceed to the next step. If you use `make` outside of DROID in the command line, you can add a `-B` at the end of your command to invalid all previous attempts to build the file and force rebuilding it (and all its dependencies), for example. `make test.txt -B`.
